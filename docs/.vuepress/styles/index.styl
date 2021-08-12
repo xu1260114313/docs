@@ -1,20 +1,45 @@
 .theme-default-content:not(.custom) {
     margin: 0;
 }
-#iframe-view {
+
+.demo-container {
+    width: 100%;
+}
+
+.demo-model {
     position: fixed;
-    right: 150px;
+    right: 4rem;
     top: 50%;
-    margin-top: -339px;
-    padding: 48px 23px 38px 16px;
-    width: 350px;
-    height: 708px;
-    border: 0;
+    z-index: 3;
+    margin-top: -21.6rem;
+    padding: 10px;
+    width: 24.9rem;
+    height: 43.19rem;
+    box-sizing: border-box;
+    border: 2px solid #eaeefb;
+    border-radius: 1.25rem;
+    background-color: #fff;
+}
+
+.iframe-view {
+  width: 100%;
+  height: 100%;
+  border: 0;
     outline: 0;
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-    background-image: url('https://www.uviewui.com/common/iPhoneX_model.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1580px) {
+    .demo-model {
+        position: static;
+        right: 0;
+        top: 0;
+        margin-top: 2rem;
+    }
+    .theme-default-content:not(.custom) {
+        margin: auto;
+    }
 }

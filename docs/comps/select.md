@@ -1,14 +1,22 @@
 <!--
  * @Author: your name
  * @Date: 2021-08-11 13:39:19
- * @LastEditTime: 2021-08-12 11:41:04
+ * @LastEditTime: 2021-08-12 22:51:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \工单整理文档d:\code\ui-repo1\docs\coms\select.md
 -->
+
 # Select 选择器
 
 当选项过多时，使用下拉菜单展示并选择内容。
+
+<div class="demo-container">
+	<div class="demo-model">
+		<iframe class="iframe-view" src="https://h5.uviewui.com/#/pages/componentsA/tag/index"></iframe>
+	</div>
+</div>
+
 
 ## 基本用法
 
@@ -50,5 +58,3 @@
 | click | 点击标签触发 | index: 传递的`index`参数值 | - |
 | close | `closeable`为`true`时，点击标签关闭按钮触发 | index: 传递的`index`参数值 | - |
 
-
-<iframe id="iframe-view" src="https://h5.uviewui.com/#/pages/componentsA/tag/index"></iframe>
