@@ -41,7 +41,8 @@
     "test:mp-baidu": "cross-env UNI_PLATFORM=mp-baidu jest -i",
     "test:mp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "npm run docs:build && bash deploy.sh"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-31920210709003",
