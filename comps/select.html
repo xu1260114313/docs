@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>bop-app</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="社区项目文档">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.1e7b9351.css" as="style"><link rel="preload" href="/docs/assets/js/app.df56c4c5.js" as="script"><link rel="preload" href="/docs/assets/js/2.b5fad0a2.js" as="script"><link rel="preload" href="/docs/assets/js/12.d71216c0.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.1802b65e.js"><link rel="prefetch" href="/docs/assets/js/11.94da77f3.js"><link rel="prefetch" href="/docs/assets/js/13.d28e4811.js"><link rel="prefetch" href="/docs/assets/js/14.51632ffc.js"><link rel="prefetch" href="/docs/assets/js/15.51188618.js"><link rel="prefetch" href="/docs/assets/js/16.4efb7285.js"><link rel="prefetch" href="/docs/assets/js/3.359b1de8.js"><link rel="prefetch" href="/docs/assets/js/4.7453931e.js"><link rel="prefetch" href="/docs/assets/js/5.d2c29405.js"><link rel="prefetch" href="/docs/assets/js/6.bea1c1c6.js"><link rel="prefetch" href="/docs/assets/js/7.9436d450.js"><link rel="prefetch" href="/docs/assets/js/8.d85ce73d.js"><link rel="prefetch" href="/docs/assets/js/9.7bf76658.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.1e7b9351.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">bop-app</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/utils/" class="nav-link">
+  js工具库
+</a></div><div class="nav-item"><a href="/docs/pages/" class="nav-link">
+  页面
+</a></div><div class="nav-item"><a href="/docs/comps/" class="nav-link router-link-active">
+  组件
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/utils/" class="nav-link">
+  js工具库
+</a></div><div class="nav-item"><a href="/docs/pages/" class="nav-link">
+  页面
+</a></div><div class="nav-item"><a href="/docs/comps/" class="nav-link router-link-active">
+  组件
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/comps/" aria-current="page" class="sidebar-link">文档首页</a></li><li><a href="/docs/comps/select.html" aria-current="page" class="active sidebar-link">选择组件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/comps/select.html#基本用法" class="sidebar-link">基本用法</a></li><li class="sidebar-sub-header"><a href="/docs/comps/select.html#api" class="sidebar-link">API</a></li><li class="sidebar-sub-header"><a href="/docs/comps/select.html#props" class="sidebar-link">Props</a></li><li class="sidebar-sub-header"><a href="/docs/comps/select.html#event" class="sidebar-link">Event</a></li></ul></li><li><a href="/docs/comps/button.html" class="sidebar-link">按钮组件</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="select-选择器"><a href="#select-选择器" class="header-anchor">#</a> Select 选择器</h1> <p>当选项过多时，使用下拉菜单展示并选择内容。</p> <div class="demo-container"><div class="demo-model"><iframe src="https://h5.uviewui.com/#/pages/componentsA/tag/index" class="iframe-view"></iframe></div></div> <h2 id="基本用法"><a href="#基本用法" class="header-anchor">#</a> 基本用法</h2> <p>适用广泛的基础单选</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>u-tag</span> <span class="token attr-name">text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>要清楚<span class="token punctuation">&quot;</span></span> <span class="token attr-name">closeable</span> <span class="token attr-name">:show</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>show<span class="token punctuation">&quot;</span></span> <span class="token attr-name">@close</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>tagClick<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+		<span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token punctuation">{</span>
+				show<span class="token operator">:</span> <span class="token boolean">true</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		methods<span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token function">tagClick</span><span class="token punctuation">(</span><span class="token parameter">index</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token keyword">this</span><span class="token punctuation">.</span>show <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="api"><a href="#api" class="header-anchor">#</a> API</h2> <h2 id="props"><a href="#props" class="header-anchor">#</a> Props</h2> <table><thead><tr><th>参数</th> <th style="text-align:center;">说明</th> <th style="text-align:right;">类型</th> <th style="text-align:right;">默认值</th> <th style="text-align:right;">可选值</th></tr></thead> <tbody><tr><td>type</td> <td style="text-align:center;">主题类型</td> <td style="text-align:right;">String</td> <td style="text-align:right;">primary</td> <td style="text-align:right;">success / info / warning / error</td></tr> <tr><td>size</td> <td style="text-align:center;">标签大小</td> <td style="text-align:right;">String</td> <td style="text-align:right;">default</td> <td style="text-align:right;">mini</td></tr> <tr><td>shape</td> <td style="text-align:center;">标签形状</td> <td style="text-align:right;">String</td> <td style="text-align:right;">square</td> <td style="text-align:right;">circle / circleLeft / circleRight</td></tr> <tr><td>text</td> <td style="text-align:center;">标签的文字内容</td> <td style="text-align:right;">String</td> <td style="text-align:right;">-</td> <td style="text-align:right;">-</td></tr></tbody></table> <h2 id="event"><a href="#event" class="header-anchor">#</a> Event</h2> <table><thead><tr><th style="text-align:center;">事件名</th> <th style="text-align:center;">说明</th> <th style="text-align:center;">回调参数</th> <th style="text-align:center;">版本</th></tr></thead> <tbody><tr><td style="text-align:center;">click</td> <td style="text-align:center;">点击标签触发</td> <td style="text-align:center;">index: 传递的<code>index</code>参数值</td> <td style="text-align:center;">-</td></tr> <tr><td style="text-align:center;">close</td> <td style="text-align:center;"><code>closeable</code>为<code>true</code>时，点击标签关闭按钮触发</td> <td style="text-align:center;">index: 传递的<code>index</code>参数值</td> <td style="text-align:center;">-</td></tr></tbody></table></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.df56c4c5.js" defer></script><script src="/docs/assets/js/2.b5fad0a2.js" defer></script><script src="/docs/assets/js/12.d71216c0.js" defer></script>
+  </body>
+</html>
