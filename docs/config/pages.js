@@ -8,7 +8,8 @@
  */
 const pageList = [
     ['', '社区首页'],
-    ['test.md', '购物车']
+    ['test.md', '购物车'],
+	['login.md', '登录']
   ];
 
 module.exports = {
